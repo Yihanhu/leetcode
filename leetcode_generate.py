@@ -48,6 +48,7 @@ def get_config_from_file():
     username = cp.get('leetcode', 'username')
     if os.getenv('leetcode_username'):
         username = os.getenv('leetcode_username')
+        print(username)
     password = cp.get('leetcode', 'password')
     if os.getenv('leetcode_password'):
         password = os.getenv('leetcode_password')
@@ -68,8 +69,7 @@ def get_config_from_file():
         username=username,
         password=password,
         language=language.lower(),
-        repo=repo,
-        driverpath=driverpath,
+        repo=repo,        driverpath=driverpath,
     )
     return rst
 
@@ -319,7 +319,7 @@ class Leetcode:
         # set limit a big num
         print('API load submissions request 2 seconds per request')
         print('Please wait ...')
-        limit = 20
+        limit = 500
         offset = 0
         last_key = ''
         while True:
