@@ -1,9 +1,9 @@
 # :pencil2: Leetcode Solutions with Cpp
-Update time:  2019-05-27 12:02:51
+Update time:  2019-05-27 13:35:24
 
 Auto created by [leetcode_generate](https://github.com/bonfy/leetcode)
 
-I have solved **229   /   1002** problems
+I have solved **230   /   1002** problems
 while there are **140** problems still locked.
 
 If you want to use this tool please follow this [Usage Guide](https://github.com/bonfy/leetcode/blob/master/README_leetcode_generate.md)
@@ -540,7 +540,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |556|[next-greater-element-iii](https://leetcode.com/problems/next-greater-element-iii)||[:memo:](https://leetcode.com/articles/next-greater-element-iii/)|Medium|
 |557|[reverse-words-in-a-string-iii](https://leetcode.com/problems/reverse-words-in-a-string-iii)||[:memo:](https://leetcode.com/articles/reverse-words-in-a-string/)|Easy|
 |560|[subarray-sum-equals-k](https://leetcode.com/problems/subarray-sum-equals-k)||[:memo:](https://leetcode.com/articles/subarray-sum-equals-k/)|Medium|
-|561|[array-partition-i](https://leetcode.com/problems/array-partition-i)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0561-array-partition-i/array-partition-i.cpp)|[:memo:](https://leetcode.com/articles/array-partitioning-i/)|Easy|
+|561|[array-partition-i](https://leetcode.com/problems/array-partition-i)||[:memo:](https://leetcode.com/articles/array-partitioning-i/)|Easy|
 |562|[longest-line-of-consecutive-one-in-matrix](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix)|:lock:|[:memo:](https://leetcode.com/articles/longest-line-of-consecutive-one-in-a-matrix/)|Medium|
 |563|[binary-tree-tilt](https://leetcode.com/problems/binary-tree-tilt)||[:memo:](https://leetcode.com/articles/binary-tree-tilt/)|Easy|
 |564|[find-the-closest-palindrome](https://leetcode.com/problems/find-the-closest-palindrome)||[:memo:](https://leetcode.com/articles/find-the-closest-palindrome/)|Hard|
@@ -801,7 +801,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |870|[magic-squares-in-grid](https://leetcode.com/problems/magic-squares-in-grid)||[:memo:](https://leetcode.com/articles/magic-squares-in-grid/)|Easy|
 |871|[keys-and-rooms](https://leetcode.com/problems/keys-and-rooms)||[:memo:](https://leetcode.com/articles/keys-and-rooms/)|Medium|
 |872|[split-array-into-fibonacci-sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence)||[:memo:](https://leetcode.com/articles/split-array-into-fibonacci-sequence/)|Medium|
-|873|[guess-the-word](https://leetcode.com/problems/guess-the-word)||[:memo:](https://leetcode.com/articles/guess-the-word/)|Hard|
+|873|[guess-the-word](https://leetcode.com/problems/guess-the-word)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0873-guess-the-word/guess-the-word.cpp)|[:memo:](https://leetcode.com/articles/guess-the-word/)|Hard|
 |874|[backspace-string-compare](https://leetcode.com/problems/backspace-string-compare)||[:memo:](https://leetcode.com/articles/backspace-string-compare/)|Easy|
 |875|[longest-mountain-in-array](https://leetcode.com/problems/longest-mountain-in-array)||[:memo:](https://leetcode.com/articles/longest-mountain-in-array/)|Medium|
 |876|[hand-of-straights](https://leetcode.com/problems/hand-of-straights)||[:memo:](https://leetcode.com/articles/hand-of-straights/)|Medium|
