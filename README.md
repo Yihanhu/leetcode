@@ -1,9 +1,9 @@
 # :pencil2: Leetcode Solutions with Cpp
-Update time:  2019-05-28 11:20:44
+Update time:  2019-05-28 14:41:38
 
 Auto created by [leetcode_generate](https://github.com/bonfy/leetcode)
 
-I have solved **237   /   1002** problems
+I have solved **238   /   1002** problems
 while there are **140** problems still locked.
 
 If you want to use this tool please follow this [Usage Guide](https://github.com/bonfy/leetcode/blob/master/README_leetcode_generate.md)
@@ -194,7 +194,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |186|[reverse-words-in-a-string-ii](https://leetcode.com/problems/reverse-words-in-a-string-ii)|:lock:||Medium|
 |187|[repeated-dna-sequences](https://leetcode.com/problems/repeated-dna-sequences)|||Medium|
 |188|[best-time-to-buy-and-sell-stock-iv](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)|||Hard|
-|189|[rotate-array](https://leetcode.com/problems/rotate-array)||[:memo:](https://leetcode.com/articles/rotate-array/)|Easy|
+|189|[rotate-array](https://leetcode.com/problems/rotate-array)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0189-rotate-array/rotate-array.cpp)|[:memo:](https://leetcode.com/articles/rotate-array/)|Easy|
 |190|[reverse-bits](https://leetcode.com/problems/reverse-bits)|||Easy|
 |191|[number-of-1-bits](https://leetcode.com/problems/number-of-1-bits)||[:memo:](https://leetcode.com/articles/number-1-bits/)|Easy|
 |198|[house-robber](https://leetcode.com/problems/house-robber)||[:memo:](https://leetcode.com/articles/house-robber/)|Easy|
@@ -521,7 +521,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |536|[construct-binary-tree-from-string](https://leetcode.com/problems/construct-binary-tree-from-string)|:lock:||Medium|
 |537|[complex-number-multiplication](https://leetcode.com/problems/complex-number-multiplication)||[:memo:](https://leetcode.com/articles/complex-number-multiplication/)|Medium|
 |538|[convert-bst-to-greater-tree](https://leetcode.com/problems/convert-bst-to-greater-tree)||[:memo:](https://leetcode.com/articles/convert-bst-to-greater-tree/)|Easy|
-|539|[minimum-time-difference](https://leetcode.com/problems/minimum-time-difference)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0539-minimum-time-difference/minimum-time-difference.cpp)||Medium|
+|539|[minimum-time-difference](https://leetcode.com/problems/minimum-time-difference)|||Medium|
 |540|[single-element-in-a-sorted-array](https://leetcode.com/problems/single-element-in-a-sorted-array)|||Medium|
 |541|[reverse-string-ii](https://leetcode.com/problems/reverse-string-ii)||[:memo:](https://leetcode.com/articles/reverse-string-ii/)|Easy|
 |542|[01-matrix](https://leetcode.com/problems/01-matrix)||[:memo:](https://leetcode.com/articles/01-matrix/)|Medium|
@@ -736,7 +736,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |798|[transform-to-chessboard](https://leetcode.com/problems/transform-to-chessboard)||[:memo:](https://leetcode.com/articles/transform-to-chessboard/)|Hard|
 |799|[minimum-distance-between-bst-nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes)||[:memo:](https://leetcode.com/articles/minimum-distance-between-bst-nodes/)|Easy|
 |800|[letter-case-permutation](https://leetcode.com/problems/letter-case-permutation)||[:memo:](https://leetcode.com/articles/letter-case-permutation/)|Easy|
-|801|[is-graph-bipartite](https://leetcode.com/problems/is-graph-bipartite)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0801-is-graph-bipartite/is-graph-bipartite.cpp)|[:memo:](https://leetcode.com/articles/is-graph-bipartite/)|Medium|
+|801|[is-graph-bipartite](https://leetcode.com/problems/is-graph-bipartite)||[:memo:](https://leetcode.com/articles/is-graph-bipartite/)|Medium|
 |802|[k-th-smallest-prime-fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction)||[:memo:](https://leetcode.com/articles/k-th-smallest-prime-fraction/)|Hard|
 |803|[cheapest-flights-within-k-stops](https://leetcode.com/problems/cheapest-flights-within-k-stops)||[:memo:](https://leetcode.com/articles/cheapest-flights-within-k-stops/)|Medium|
 |804|[rotated-digits](https://leetcode.com/problems/rotated-digits)||[:memo:](https://leetcode.com/articles/rotated-digits/)|Easy|
