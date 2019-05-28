@@ -43,36 +43,29 @@ public:
             return false;
         int lo = 0;
         int hi = m-1;
-        while(lo < hi){
-            // cout<<lo<< hi<<endl;
-            // cout<<matrix[lo]<<" "<<matrix[first][hi]<<endl;
-            if(hi - lo == 1)
-                break;
+        while(lo <= hi){
             int mid = (lo + hi)/2;
             if(matrix[mid][0] < target)
-                lo = mid;
+                lo = mid+1;
             else if(matrix[mid][0] > target)
-                hi = mid;
+                hi = mid-1;
             else
                 return true;
         }
-        if(matrix[lo][0] == target or matrix[hi][0] == target)
-            return true;
-        int first = lo;
-        if(matrix[hi][0] < target)
-            first = hi;
+        if(hi < 0)
+            return false;
+        int first = hi;
         lo = 0, hi = n-1;
-        while(lo < hi){
-            if(hi - lo == 1)
-                break;
+        while(lo <= hi){
             int mid = (lo + hi)/2;
             if(matrix[first][mid] < target)
-                lo = mid;
+                lo = mid+1;
             else if(matrix[first][mid] > target)
-                hi = mid;
+                hi = mid-1;
             else
                 return true;
         }
-        return matrix[first][lo] == target or matrix[first][hi] == target;
+       
+        return false;
     }
 };
