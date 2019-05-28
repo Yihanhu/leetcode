@@ -1,9 +1,9 @@
 # :pencil2: Leetcode Solutions with Cpp
-Update time:  2019-05-28 11:05:50
+Update time:  2019-05-28 11:20:44
 
 Auto created by [leetcode_generate](https://github.com/bonfy/leetcode)
 
-I have solved **236   /   1002** problems
+I have solved **237   /   1002** problems
 while there are **140** problems still locked.
 
 If you want to use this tool please follow this [Usage Guide](https://github.com/bonfy/leetcode/blob/master/README_leetcode_generate.md)
@@ -202,7 +202,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |200|[number-of-islands](https://leetcode.com/problems/number-of-islands)||[:memo:](https://leetcode.com/articles/number-of-islands/)|Medium|
 |201|[bitwise-and-of-numbers-range](https://leetcode.com/problems/bitwise-and-of-numbers-range)|||Medium|
 |202|[happy-number](https://leetcode.com/problems/happy-number)|||Easy|
-|203|[remove-linked-list-elements](https://leetcode.com/problems/remove-linked-list-elements)|||Easy|
+|203|[remove-linked-list-elements](https://leetcode.com/problems/remove-linked-list-elements)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0203-remove-linked-list-elements/remove-linked-list-elements.cpp)||Easy|
 |204|[count-primes](https://leetcode.com/problems/count-primes)|||Easy|
 |205|[isomorphic-strings](https://leetcode.com/problems/isomorphic-strings)|||Easy|
 |206|[reverse-linked-list](https://leetcode.com/problems/reverse-linked-list)||[:memo:](https://leetcode.com/articles/reverse-linked-list/)|Easy|
@@ -320,7 +320,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |319|[bulb-switcher](https://leetcode.com/problems/bulb-switcher)|||Medium|
 |320|[generalized-abbreviation](https://leetcode.com/problems/generalized-abbreviation)|:lock:|[:memo:](https://leetcode.com/articles/generalized-abbreviation/)|Medium|
 |321|[create-maximum-number](https://leetcode.com/problems/create-maximum-number)|||Hard|
-|322|[coin-change](https://leetcode.com/problems/coin-change)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0322-coin-change/coin-change.cpp)|[:memo:](https://leetcode.com/articles/coin-change/)|Medium|
+|322|[coin-change](https://leetcode.com/problems/coin-change)||[:memo:](https://leetcode.com/articles/coin-change/)|Medium|
 |323|[number-of-connected-components-in-an-undirected-graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)|:lock:||Medium|
 |324|[wiggle-sort-ii](https://leetcode.com/problems/wiggle-sort-ii)|||Medium|
 |325|[maximum-size-subarray-sum-equals-k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k)|:lock:||Medium|
@@ -625,7 +625,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |676|[implement-magic-dictionary](https://leetcode.com/problems/implement-magic-dictionary)||[:memo:](https://leetcode.com/articles/implement-magic-dictionary/)|Medium|
 |677|[map-sum-pairs](https://leetcode.com/problems/map-sum-pairs)||[:memo:](https://leetcode.com/articles/map-sum-pairs/)|Medium|
 |678|[valid-parenthesis-string](https://leetcode.com/problems/valid-parenthesis-string)||[:memo:](https://leetcode.com/articles/valid-parenthesis-string/)|Medium|
-|679|[24-game](https://leetcode.com/problems/24-game)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0679-24-game/24-game.cpp)|[:memo:](https://leetcode.com/articles/24-game/)|Hard|
+|679|[24-game](https://leetcode.com/problems/24-game)||[:memo:](https://leetcode.com/articles/24-game/)|Hard|
 |680|[valid-palindrome-ii](https://leetcode.com/problems/valid-palindrome-ii)||[:memo:](https://leetcode.com/articles/valid-palindrome-ii/)|Easy|
 |681|[next-closest-time](https://leetcode.com/problems/next-closest-time)|:lock:|[:memo:](https://leetcode.com/articles/next-closest-time/)|Medium|
 |682|[baseball-game](https://leetcode.com/problems/baseball-game)||[:memo:](https://leetcode.com/articles/baseball-game/)|Easy|
