@@ -26,7 +26,7 @@ public:
             if(head->val == val){
                 ListNode* tmp = head;
                 head = head->next;
-                // delete tmp;
+                delete tmp;
                 if(pre)
                     pre->next = head;
             }
