@@ -1,9 +1,9 @@
 # :pencil2: Leetcode Solutions with Cpp
-Update time:  2019-07-05 17:39:21
+Update time:  2019-07-05 18:09:08
 
 Auto created by [leetcode_generate](https://github.com/bonfy/leetcode)
 
-I have solved **251   /   1043** problems
+I have solved **252   /   1043** problems
 while there are **161** problems still locked.
 
 If you want to use this tool please follow this [Usage Guide](https://github.com/bonfy/leetcode/blob/master/README_leetcode_generate.md)
@@ -150,7 +150,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |132|[palindrome-partitioning-ii](https://leetcode.com/problems/palindrome-partitioning-ii)|||Hard|
 |133|[clone-graph](https://leetcode.com/problems/clone-graph)|||Medium|
 |134|[gas-station](https://leetcode.com/problems/gas-station)||[:memo:](https://leetcode.com/articles/gas-station/)|Medium|
-|135|[candy](https://leetcode.com/problems/candy)||[:memo:](https://leetcode.com/articles/candy/)|Hard|
+|135|[candy](https://leetcode.com/problems/candy)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0135-candy/candy.cpp)|[:memo:](https://leetcode.com/articles/candy/)|Hard|
 |136|[single-number](https://leetcode.com/problems/single-number)||[:memo:](https://leetcode.com/articles/single-number/)|Easy|
 |137|[single-number-ii](https://leetcode.com/problems/single-number-ii)|||Medium|
 |138|[copy-list-with-random-pointer](https://leetcode.com/problems/copy-list-with-random-pointer)||[:memo:](https://leetcode.com/articles/copy-list-with-random-pointer/)|Medium|
@@ -194,7 +194,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |186|[reverse-words-in-a-string-ii](https://leetcode.com/problems/reverse-words-in-a-string-ii)|:lock:||Medium|
 |187|[repeated-dna-sequences](https://leetcode.com/problems/repeated-dna-sequences)|||Medium|
 |188|[best-time-to-buy-and-sell-stock-iv](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)|||Hard|
-|189|[rotate-array](https://leetcode.com/problems/rotate-array)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0189-rotate-array/rotate-array.cpp)|[:memo:](https://leetcode.com/articles/rotate-array/)|Easy|
+|189|[rotate-array](https://leetcode.com/problems/rotate-array)||[:memo:](https://leetcode.com/articles/rotate-array/)|Easy|
 |190|[reverse-bits](https://leetcode.com/problems/reverse-bits)|||Easy|
 |191|[number-of-1-bits](https://leetcode.com/problems/number-of-1-bits)||[:memo:](https://leetcode.com/articles/number-1-bits/)|Easy|
 |198|[house-robber](https://leetcode.com/problems/house-robber)||[:memo:](https://leetcode.com/articles/house-robber/)|Easy|
