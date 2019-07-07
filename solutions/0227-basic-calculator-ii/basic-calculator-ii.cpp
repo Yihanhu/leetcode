@@ -38,10 +38,6 @@ public:
         int num = -1;
         char preop = '+';
         for(int i=0; i<s.size(); i++){
-            // for(int j = 0; j<stack.size();j++){
-            // cout<<stack[j]<<';';
-            // }
-            // cout<<endl;
             if((s[i] - '0')>=0 and (s[i] - '0') <=9){
                 if (num >= 0){
                     num = num*10 + s[i] - '0';
@@ -64,7 +60,6 @@ public:
         }
         int result =0;
         for(int j = 0; j<stack.size();j++){
-            // cout<<stack[j]<<';';
             result += stack[j];
         }
         return result;
