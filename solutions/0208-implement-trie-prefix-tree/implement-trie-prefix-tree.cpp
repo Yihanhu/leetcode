@@ -22,94 +22,70 @@
 //
 
 
-class TrieNode{
+class TrieNode {
 public:
-    TrieNode* next[26];
-    bool end;
-    TrieNode(){
-        for(int i = 0; i < 26; i++){
-            next[i] = NULL;
-        }
-        end = false;
-    }
-    ~TrieNode(){
-        for(auto node:next){
-            delete node;
-        }
+    TrieNode * next[26];
+    bool is_word;
+    TrieNode(bool b = false){
+        memset(next,0,sizeof(next));
+        is_word = b;
     }
 };
 
+
 class Trie {
+    TrieNode * head;
 public:
     /** Initialize your data structure here. */
     Trie() {
-        root = new TrieNode();
-    }
-    
-    ~Trie(){
-        delete root;
+        head = new TrieNode();        
     }
     
     /** Inserts a word into the trie. */
     void insert(string word) {
-        curInsert(word, 0, root);
+        TrieNode *ptr = head;
+        for (auto c : word){
+            short num = c - 'a';
+            // cout<<c;
+            if(!ptr->next[num]){
+                ptr->next[num] = new TrieNode();
+            }
+            ptr = ptr->next[num];
+        }
+        ptr->is_word = true;
     }
     
     /** Returns if the word is in the trie. */
     bool search(string word) {
-        return curSearch(word, 0, root);
+        TrieNode *ptr = head;
+        for(auto c: word){
+            short num = c - 'a';
+            if(!ptr->next[num]){
+                return false;
+            }
+            ptr = ptr->next[num];
+        }
+        return ptr->is_word;
     }
     
     /** Returns if there is any word in the trie that starts with the given prefix. */
     bool startsWith(string prefix) {
-        return curStartswith(prefix, 0, root);
-    }
-
-private:
-    TrieNode* root;
-    
-    void curInsert(string& word, int pos, TrieNode* tnode){
-        if(pos < word.size()){
-            if(!tnode->next[word[pos] - 'a']){
-                tnode->next[word[pos] - 'a'] = new TrieNode();
-            }
-            curInsert(word, pos+1, tnode->next[word[pos] - 'a']);
-        }
-        else{
-            tnode->end = true;
-        }
-    }
-    
-    bool curSearch(string& word, int pos, TrieNode* tnode){
-        if(pos == word.size()){
-            return tnode->end;
-        }
-        else{
-            if(!tnode->next[word[pos] - 'a']){
+        TrieNode *ptr = head;
+        for(auto c: prefix){
+            short num = c - 'a';
+            if(!ptr->next[num]){
                 return false;
             }
-            return curSearch(word, pos+1, tnode->next[word[pos] - 'a']);
+            ptr = ptr->next[num];
         }
-    }
-    
-    bool curStartswith(string& prefix, int pos, TrieNode* tnode){
-        if(pos == prefix.size()){
-            return true;
-        }
-        if(!tnode->next[prefix[pos] - 'a']){
-            return false;
-        }
-        return curStartswith(prefix, pos+1, tnode->next[prefix[pos] - 'a']);
+        return true;
     }
 };
 
-
-
-
 /**
  * Your Trie object will be instantiated and called as such:
- * Trie* obj = new Trie();
- * obj->insert(word);
- * bool param_2 = obj->search(word);
- * bool param_3 = obj->startsWith(prefix);
+ * Trie obj = new Trie();
+ * obj.insert(word);
+ * bool param_2 = obj.search(word);
+ * bool param_3 = obj.startsWith(prefix);
  */
