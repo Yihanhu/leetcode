@@ -45,17 +45,19 @@
 class Solution {
 public:
     int numberOfArithmeticSlices(vector<int>& A) {
-        int res = 0, n = A.size();
-        vector<unordered_map<int, int>> dp(n);
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < i; ++j) {
-                long delta = (long)A[i] - A[j];
+        if(A.size() < 2)
+            return 0;
+        int res = 0;
+        vector<unordered_map<int,int>> dp(A.size());
+        for(int i = 0; i < A.size(); i++ ){
+            for(int j = i+1; j < A.size(); j++){
+                long long delta = (long long)A[j] - (long long)A[i];
                 if (delta > INT_MAX || delta < INT_MIN) continue;
                 int diff = (int)delta;
-                ++dp[i][diff];
-                if (dp[j].count(diff)) {
-                    res += dp[j][diff];
-                    dp[i][diff] += dp[j][diff];
+                 ++dp[j][diff];
+                 if (dp[i].count(diff)) {
+                    res += dp[i][diff];
+                    dp[j][diff] += dp[i][diff];
                 }
             }
         }
