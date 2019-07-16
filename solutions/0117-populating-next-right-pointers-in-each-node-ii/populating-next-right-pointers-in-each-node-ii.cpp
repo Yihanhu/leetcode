@@ -59,22 +59,24 @@ public:
 class Solution {
 public:
     Node* connect(Node* root) {
-        queue<pair<Node*, int>> Q;
-        if(!root)
-            return root;
-        Q.push(make_pair(root,0));
-        while(!Q.empty()){
-            Node* ptr = Q.front().first;
-            int level = Q.front().second;
-            Q.pop();
-            if(!Q.empty() and Q.front().second == level){
-                ptr->next = Q.front().first;
+        Node *dummy = new Node(0,NULL,NULL,NULL);
+        Node *cur = dummy, *head = root;
+        while(root){
+            if(root->left){
+                cur->next = root->left;
+                cur = cur->next;
             }
-            if(ptr->left)
-                Q.push(make_pair(ptr->left,level+1));
-            if(ptr->right)
-                Q.push(make_pair(ptr->right,level+1));
+            if(root->right){
+                cur->next = root->right;
+                cur = cur->next;
+            }
+            root = root->next;
+            if(!root){
+                root = dummy->next;
+                dummy->next = NULL;
+                cur = dummy;
+            }
         }
-        return root;
+        return head;
     }
 };
