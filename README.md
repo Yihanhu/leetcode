@@ -1,9 +1,9 @@
 # :pencil2: Leetcode Solutions with Cpp
-Update time:  2019-07-22 23:14:34
+Update time:  2019-07-23 22:42:07
 
 Auto created by [leetcode_generate](https://github.com/bonfy/leetcode)
 
-I have solved **278   /   1059** problems
+I have solved **279   /   1059** problems
 while there are **165** problems still locked.
 
 If you want to use this tool please follow this [Usage Guide](https://github.com/bonfy/leetcode/blob/master/README_leetcode_generate.md)
@@ -163,7 +163,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |145|[binary-tree-postorder-traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)||[:memo:](https://leetcode.com/articles/binary-tree-postorder-transversal/)|Hard|
 |146|[lru-cache](https://leetcode.com/problems/lru-cache)||[:memo:](https://leetcode.com/articles/lru-cache/)|Medium|
 |147|[insertion-sort-list](https://leetcode.com/problems/insertion-sort-list)|||Medium|
-|148|[sort-list](https://leetcode.com/problems/sort-list)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0148-sort-list/sort-list.cpp)||Medium|
+|148|[sort-list](https://leetcode.com/problems/sort-list)|||Medium|
 |149|[max-points-on-a-line](https://leetcode.com/problems/max-points-on-a-line)||[:memo:](https://leetcode.com/articles/max-points-on-a-line/)|Hard|
 |150|[evaluate-reverse-polish-notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)|||Medium|
 |151|[reverse-words-in-a-string](https://leetcode.com/problems/reverse-words-in-a-string)|||Medium|
@@ -417,7 +417,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |416|[partition-equal-subset-sum](https://leetcode.com/problems/partition-equal-subset-sum)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0416-partition-equal-subset-sum/partition-equal-subset-sum.cpp)||Medium|
 |417|[pacific-atlantic-water-flow](https://leetcode.com/problems/pacific-atlantic-water-flow)|||Medium|
 |418|[sentence-screen-fitting](https://leetcode.com/problems/sentence-screen-fitting)|:lock:||Medium|
-|419|[battleships-in-a-board](https://leetcode.com/problems/battleships-in-a-board)|||Medium|
+|419|[battleships-in-a-board](https://leetcode.com/problems/battleships-in-a-board)|[Cpp](https://github.com/Yihanhu/leetcode/blob/master/solutions/0419-battleships-in-a-board/battleships-in-a-board.cpp)||Medium|
 |420|[strong-password-checker](https://leetcode.com/problems/strong-password-checker)|||Hard|
 |421|[maximum-xor-of-two-numbers-in-an-array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array)|||Medium|
 |422|[valid-word-square](https://leetcode.com/problems/valid-word-square)|:lock:||Easy|
@@ -984,7 +984,7 @@ If you are loving solving problems in leetcode, please contact me to enjoy it to
 |1057|[numbers-with-repeated-digits](https://leetcode.com/problems/numbers-with-repeated-digits)|||Hard|
 |1058|[lexicographically-smallest-equivalent-string](https://leetcode.com/problems/lexicographically-smallest-equivalent-string)|:lock:||Medium|
 |1059|[missing-element-in-sorted-array](https://leetcode.com/problems/missing-element-in-sorted-array)|:lock:|[:memo:](https://leetcode.com/articles/missing-element-in-sorted-array/)|Medium|
-|1060|[longest-repeating-substring](https://leetcode.com/problems/longest-repeating-substring)|:lock:||Medium|
+|1060|[longest-repeating-substring](https://leetcode.com/problems/longest-repeating-substring)|:lock:|[:memo:](https://leetcode.com/articles/longest-repeating-substring/)|Medium|
 |1061|[number-of-valid-subarrays](https://leetcode.com/problems/number-of-valid-subarrays)|:lock:||Hard|
 |1062|[partition-array-into-three-parts-with-equal-sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum)|||Easy|
 |1063|[best-sightseeing-pair](https://leetcode.com/problems/best-sightseeing-pair)|||Medium|
