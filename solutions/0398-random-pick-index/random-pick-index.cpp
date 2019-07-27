@@ -27,17 +27,21 @@ public:
     }
     
     int pick(int target) {
-    int n = 0, ans = -1;
-    for(int i = 0 ; i < stream.size(); i++){
-        if(stream[i] != target) continue;
-        if(n == 0){ans = i; n++;}
-        else{
-            n++;
-            if(rand() % n == 0){ans = i;}// with prob 1/(n+1) to replace the previous index
+        int index = -1;
+        int count = 0;
+        for(int i = 0; i <stream.size();i++){
+            if(stream[i] == target){
+                if(count == 0){index = i;count++;}
+                else{
+                    count++;
+                    if(rand() % count == 0){
+                        index = i;
+                    }
+                }
+            }
         }
+        return index;
     }
-    return ans;
-}
 };
 
 /**
