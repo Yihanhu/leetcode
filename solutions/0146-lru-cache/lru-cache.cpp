@@ -30,41 +30,38 @@
 
 class LRUCache {
 public:
-    int c;
-    int time = 0;
-    unordered_map<int,pair<int,int>> map;
     LRUCache(int capacity) {
-        c = capacity;
+        cap = capacity;
     }
     
     int get(int key) {
-        if(map.count(key)){
-            map[key].second = time++;
-            return map[key].first;
-        }
-        else
+        if(!map.count(key))
             return -1;
+        l.splice(l.begin(), l, map[key]);
+        return map[key]->second;
     }
     
     void put(int key, int value) {
-        if(map.size() < c or map.count(key)){
-            map[key] = make_pair(value,time++);
+        // cout<<l.begin()->first<<endl;
+        if(map.count(key)){
+            map[key]->second = value;
+            l.splice(l.begin(),l,map[key]);
+            return;
         }
-        else{
-            int min_time = INT_MAX;
-            int min_key = 0;
-            for(auto ptr = map.begin(); ptr != map.end(); ptr++){
-                if(ptr->second.second < min_time){
-                    min_time = ptr->second.second;
-                    min_key  = ptr->first;
-                }
-            }
-            map.erase(min_key);
-            // cout<<min_key<<endl;
-            map[key] = make_pair(value,time++);
+        l.push_front(make_pair(key,value));
+        map[key] = l.begin();
+        if(map.size() > cap){
+            auto it = l.rbegin();
+            map.erase(it->first);
+            // cout<<it->first<<endl;
+            l.pop_back();
         }
-        // cout<<c<<endl;
+        
     }
+private:
+    int cap;
+    unordered_map<int, list<pair<int,int>>::iterator> map;
+    list<pair<int,int>> l;
 };
 
 /**
