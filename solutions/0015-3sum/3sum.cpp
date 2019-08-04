@@ -21,29 +21,28 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
         vector<vector<int>> res;
-        for(int i = 0; i<nums.size(); i++){
-            int target = -nums[i]; 
-            int start = i+1;
-            int end = nums.size() - 1;
-            while(start < end){
-                int sum = nums[start] + nums[end];
-                if(sum < target){
-                    start ++;
+        sort(nums.begin(), nums.end());
+        for(int i = 0; i < static_cast<int>(nums.size()) -2; i++){
+            int target = -nums[i];
+            if(target < 0)
+                break;
+            if(i >= 1 and nums[i] == nums[i-1])
+                continue;
+            int s = i + 1;
+            int e = nums.size() - 1;
+            while(s < e){
+                if(nums[s] + nums[e] == target){
+                    // cout<<s<<e<<endl;
+                    res.push_back({nums[i], nums[s], nums[e]});
+                    s++;e--;
+                    while(s < e and nums[s] == nums[s-1]){s++;}
+                    while(e > s and nums[e] == nums[e+1]){e--;}
+                    continue;
                 }
-                else if(sum > target){
-                    end --;
-                }
-                else{
-                    int a = nums[start];
-                    int b = nums[end];
-                    res.push_back({nums[start],nums[end],-target});
-                    while(start < end and nums[start] == a) start++;
-                    while(start < end and nums[end] == b) end--;
-                }
+                else if(nums[s] + nums[e] > target) {e--;}
+                else{s++;}
             }
-             while(i+1<nums.size() and nums[i] == nums[i+1]) i++;
         }
         return res;
     }
