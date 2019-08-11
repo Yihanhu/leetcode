@@ -47,30 +47,59 @@
 //
 
 
+using namespace std;
 class Solution {
 public:
-    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-        unordered_set<string> wordSet(wordList.begin(), wordList.end());
-        if (!wordSet.count(endWord)) return 0;
-        queue<string> q{{beginWord}};
-        int res = 0;
-        while (!q.empty()) {
-            for (int k = q.size(); k > 0; --k) {
-                string word = q.front(); q.pop();
-                if (word == endWord) return res + 1;
-                for (int i = 0; i < word.size(); ++i) {
-                    string newWord = word;
-                    for (char ch = 'a'; ch <= 'z'; ++ch) {
-                        newWord[i] = ch;
-                        if (wordSet.count(newWord) && newWord != word) {
-                            q.push(newWord);
-                            wordSet.erase(newWord);
-                        }   
-                    }
+    bool isConnect(string &word1, string &word2){
+        int diff_count = 0;
+        for (int i = 0;i<word1.length();i++ ){
+            if (word1[i] != word2[i]){
+                diff_count++;
+            }
+        }
+        return diff_count == 1;
+    }
+    void build_graph(map<string , vector<string>> & graph,vector<string>& wordList){
+        for (int i = 0; i < wordList.size() ; i++){
+            graph[wordList[i]] = vector<string> ();
+        }
+        for (int i = 0; i < wordList.size() ; i++){
+            for (int j = i + 1; j < wordList.size() ; j++){
+                // cout<<isConnect(wordList[i], wordList[j])<<endl;
+                if (isConnect(wordList[i], wordList[j])){
+                    graph[wordList[i]].push_back(wordList[j]);
+                    graph[wordList[j]].push_back(wordList[i]);
                 }
             }
-            ++res;
         }
-        return 0;
     }
+    
+    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+        map<string , vector<string>> graph;
+        map<string , int> visit;
+        wordList.push_back(beginWord);
+        build_graph(graph, wordList);
+        for (int i =0 ; i <wordList.size(); i++){
+            visit[wordList[i]] = 0;
+        }
+        queue<pair<string,int>> Q;
+        Q.push(std::make_pair(beginWord,1));
+        visit[beginWord] = 1;
+        while(!Q.empty()){
+            string word = Q.front().first;
+            int step = Q.front().second;
+            Q.pop();
+            vector<string> neighbor = graph[word];
+            for (int i =0; i < neighbor.size() ; i++){
+                // cout<<visit[neighbor[i]]<<neighbor[i]<<endl;
+                if (visit[neighbor[i]] == 0){
+                    Q.push(make_pair(neighbor[i],step+1));
+                    visit[neighbor[i]] = step + 1;
+                }
+            }
+        }
+        // cout<<endWord<<visit[endWord]<<endl;
+        return visit[endWord];
+    }
+    
 };

@@ -45,19 +45,23 @@ public:
     
     vector<Interval> merge(vector<Interval> &intervals) {
         // write your code here
-        std::vector<Interval> result;
         int n = intervals.size();
         sort(intervals.begin(),intervals.end(),compareInterval);
         if (n==0){
-            return result;
+            return intervals;
         }
         int max_start = intervals[0].start;
         int max_end = intervals[0].end;
+        int j = 0;
         for (int i = 1; i <= n ; i ++){
             // cout << max_end <<' '<<max_start<<' '<<i<<'\n'  ;
             if (i == n){
-                    result.push_back(Interval(max_start,max_end));
-                return result;
+                intervals[j].start = max_start ;
+                intervals[j].end = max_end;
+                while (intervals.size()>j+1){
+                    intervals.pop_back();
+                }
+                return intervals;
                 }
             if (max_end >= intervals[i].start){
                 if (max_end < intervals[i].end){
@@ -65,7 +69,9 @@ public:
                 }
             }
             else{
-                result.push_back(Interval(max_start,max_end));
+                intervals[j].start = max_start ;
+                intervals[j].end = max_end;
+                j++;
                 max_start = intervals[i].start;
                 max_end = intervals[i].end;
             }
