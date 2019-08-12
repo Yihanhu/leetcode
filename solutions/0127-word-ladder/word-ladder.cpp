@@ -59,7 +59,7 @@ public:
         }
         return diff_count == 1;
     }
-    void build_graph(map<string , vector<string>> & graph,vector<string>& wordList){
+    void build_graph(unordered_map<string , vector<string>> & graph,vector<string>& wordList){
         for (int i = 0; i < wordList.size() ; i++){
             graph[wordList[i]] = vector<string> ();
         }
@@ -75,8 +75,8 @@ public:
     }
     
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-        map<string , vector<string>> graph;
-        map<string , int> visit;
+        unordered_map<string , vector<string>> graph;
+        unordered_map<string , int> visit;
         wordList.push_back(beginWord);
         build_graph(graph, wordList);
         for (int i =0 ; i <wordList.size(); i++){
