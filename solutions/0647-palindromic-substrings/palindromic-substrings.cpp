@@ -35,21 +35,11 @@
 class Solution {
 public:
     int countSubstrings(string s) {
-        int cnt = 0;
-        for(int i = 0; i < s.size(); i++){
-            for(int j = 0; j <= min(i, static_cast<int>(s.size())-i - 1); j++){
-                if(s[i-j] == s[i+j])
-                    cnt++;
-                else
-                    break;
-            }
-            for(int j = 0; j <= min(i,static_cast<int>(s.size()) - i - 2); j++){
-                if(s[i-j]==s[i+j+1])
-                    cnt++;
-                else
-                    break;
-            }
+        int count = 0;
+        for(int i = 0; i<s.size(); i++){
+            for(int j = 0; i-j>=0 and i+j<s.size() and s[i-j] == s[i+j]; j++) count++;//check odd len
+            for(int j = 1; i-j>=0 and i+j-1<s.size() and s[i-j] == s[i+j-1]; j++) count++;
         }
-        return cnt;
+        return count;
     }
 };
