@@ -28,6 +28,7 @@
 //
 
 
+//backtracking with pruning
 class Solution {
 public:
     bool makesquare(vector<int>& nums) {
@@ -61,3 +62,60 @@ private:
         return false;
     }
 };
+
+//bit operation
+// class Solution {
+// public:
+//     bool makesquare(vector<int>& nums) {
+//         int total_length = 0;
+//         for(int i = 0; i < nums.size(); i ++){
+//             total_length += nums[i];
+//         }
+//         if (total_length % 4 != 0|nums.size()<4){
+//             return false;
+//         }
+//         vector<int> sumList;
+//         targetsum(0, nums, sumList, total_length/4, 0);
+//         vector<int> sumList2;
+//         // for(int i = 0; i < sumList.size(); i++){
+//         //     cout << bitset<sizeof(int)*8>(sumList[i]) << endl;
+//         // }
+//         for(int i = 0; i < sumList.size(); i++){
+//             for(int j = i+1; j < sumList.size(); j++){
+//                 if((sumList[i]&sumList[j]) == 0){
+//                     sumList2.push_back(sumList[i]|sumList[j]);
+//                 }
+//             }
+//         }
+//         // for(int i = 0; i < sumList2.size(); i++){
+//         //     cout << bitset<sizeof(int)*8>(sumList2[i]) << endl;
+//         // }
+//         for(int i = 0; i < sumList2.size(); i++){
+//             for(int j = i+1; j < sumList2.size(); j++){
+//                 if((sumList2[i]&sumList2[j]) == 0){
+//                     return true;
+//                 }
+//             }
+//         }
+//         return false;
+        
+//         // for(int i = 0; i < sumList.size(); i++){
+//         //     cout << bitset<sizeof(int)*8>(sumList[i]) << endl;
+//         // }
+//         // return true;
+//     }
+// private:
+//     void targetsum(int i,vector<int> &nums, vector<int> &sumList, int sumTarget, int bucket){
+//         if(nums[i] == sumTarget){
+//             sumList.push_back(bucket | 1<<(nums.size()-i-1));
+//             targetsum(i + 1, nums, sumList, sumTarget, bucket);
+//         }
+//         if(nums[i]< sumTarget && i < nums.size()){
+//             targetsum(i + 1, nums, sumList, sumTarget, bucket);
+//             targetsum(i + 1, nums, sumList, sumTarget - nums[i], bucket|1<<(nums.size()-i-1));
+//         }
+//         if(nums[i]> sumTarget && i < nums.size()){
+//             targetsum(i + 1, nums, sumList, sumTarget, bucket);
+//         }
+//     }
+// };

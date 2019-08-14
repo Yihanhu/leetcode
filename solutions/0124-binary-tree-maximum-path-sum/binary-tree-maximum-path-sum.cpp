@@ -41,21 +41,18 @@
  */
 class Solution {
 public:
-    int maxsum = INT_MIN;
+    int res = INT_MIN;
     int maxPathSum(TreeNode* root) {
-        generate(root);
-        return maxsum;
+        res = max(res, helper(root));
+        return res;
     }
     
-    int generate(TreeNode* root){
-        int maxl = 0;
-        int maxr = 0;
-        if(root->left)
-            maxl = generate(root->left);
-        if(root->right)
-            maxr = generate(root->right);
-        if((maxl+root->val+maxr)>maxsum)
-            maxsum = maxl+root->val+maxr;
-        return max(max(max(maxl+root->val,maxr+root->val),root->val),0);
+    int helper(TreeNode* root){
+        if(!root)
+            return 0;
+        int l = helper(root->left);
+        int r = helper(root->right);
+        res = max(max(max(max(res, l+r+root->val),l+root->val),r+root->val),root->val);
+        return max(max(l + root->val, r + root->val),root->val);
     }
 };
